@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="60dp"
+    android:gravity="center"
+    android:background="@color/cardview_light_background"
+    tools:context=".LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/login_icon"
+        android:padding="20dp"/>
+
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:text="sisir1"/>
+
+
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:text="sisir123"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded" />
+
+    <!-- Link to Signup  -->
+    <Button
+        android:id="@+id/btnLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="@color/drakgrey"
+        android:textSize="25dp" />
+
+</LinearLayout>

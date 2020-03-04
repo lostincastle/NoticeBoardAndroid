@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:hint="Title"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:hint="Content"
+        android:id="@+id/text_content"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/button_post"
+        android:text="Post Notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Your Notices"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
